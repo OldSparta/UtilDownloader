@@ -1,8 +1,6 @@
 #!/usr/binpython3
 import requests
 import bs4
-import re
-from urllib.parse import urljoin
 
 
 def download_file(url, name):
