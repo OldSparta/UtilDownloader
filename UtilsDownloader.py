@@ -17,7 +17,7 @@ def download_file(url, name):
         print(name, ": Successfully downloaded", sep='')
 
 
-def wordsearch(text, slen, elen=None):  #
+def wordsearch(text, slen, elen=None): 
     textList = []
     for c in text:
         if c.isdigit():
@@ -46,6 +46,7 @@ def adwDownload(url, name):
         if "var downloadToken = " in i:
             token = wordsearch(i, '\'')
     download_file(url + token, name)
+    
 def main():
     URLs = {'http://cdn.superantispyware.com/SUPERAntiSpyware.exe': "SuperAntiSpyware.exe",
             'https://downloads.malwarebytes.com/file/mbam_current': "Malwarebytes.exe",
